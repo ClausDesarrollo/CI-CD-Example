@@ -22,7 +22,8 @@ puedes configurar fácilmente la integración continua (CI) para ejecutar prueba
 2 - Este archivo debe colocarse en la ruta .github/workflows en tu repositorio. Puedes nombrar el archivo como desees, por ejemplo, test.yml.
 3 - Define el flujo de trabajo con el archivo YAML, define el flujo de trabajo especificando los eventos que desencadenarán la ejecución de las pruebas. 
 Por lo general, querrás que las pruebas se ejecuten cuando se realizan cambios en el código (por ejemplo, cuando se envían solicitudes de extracción o se realizan commits en la rama principal).
--------------------- ejemplo de documento YAML ejemplo.yml
+
+ejemplo de documento YAML ejemplo.yml
 name: CI
 
 on:
