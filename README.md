@@ -39,7 +39,7 @@ on:
 Puedes utilizar acciones predefinidas proporcionadas por GitHub o crear tus propias acciones personalizadas. 
 Por ejemplo, puedes usar acciones para clonar el repositorio, instalar dependencias y ejecutar las pruebas.
 
------------------- ejemplo documento YAML .yml
+ejemplo documento YAML .yml
 jobs:
   build:
     runs-on: ubuntu-latest
