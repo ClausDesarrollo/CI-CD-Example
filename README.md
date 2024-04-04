@@ -20,20 +20,25 @@ puedes configurar fácilmente la integración continua (CI) para ejecutar prueba
 1 - Crea un archivo de flujo de trabajo: En tu repositorio, crea un archivo YAML para definir tu flujo de trabajo en este caso nos apegaremos a GitHub Actions para automatizar la creacion de este producto. 
 
 2 - Este archivo debe colocarse en la ruta .github/workflows en tu repositorio. Puedes nombrar el archivo como desees, por ejemplo, test.yml.
+
 3 - Define el flujo de trabajo con el archivo YAML, define el flujo de trabajo especificando los eventos que desencadenarán la ejecución de las pruebas. 
 Por lo general, querrás que las pruebas se ejecuten cuando se realizan cambios en el código (por ejemplo, cuando se envían solicitudes de extracción o se realizan commits en la rama principal).
 
-ejemplo de documento YAML ejemplo.yml
+ejemplo de documento YAML ejemplo.yml:
+
 name: CI
 
 on:
   push:
+  
     branches:
       - main
   pull_request:
+  
     branches:
       - main
-----------------------------------------------------------
+
+
 
 4 - Configura los trabajos y las acciones: Dentro del bloque de flujo de trabajo, puedes configurar los trabajos y las acciones que deseas ejecutar. 
 Puedes utilizar acciones predefinidas proporcionadas por GitHub o crear tus propias acciones personalizadas. 
@@ -67,6 +72,7 @@ EJEMPLO PRACTICO PARA ESTE PROYECTO
 Vamos a ejecutar pruebas unitarias de JavaScript utilizando una herramienta como Jest. 
 Aquí tienes un ejemplo del archivo .github/workflows/test.yml:
 --------------------------------------
+
 name: CI
 
 on:
